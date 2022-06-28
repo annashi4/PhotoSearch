@@ -14,6 +14,8 @@
 		955CD483286A1DA600F41076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955CD482286A1DA600F41076 /* Assets.xcassets */; };
 		955CD486286A1DA600F41076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955CD484286A1DA600F41076 /* LaunchScreen.storyboard */; };
 		955CD48E286A40C900F41076 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD48D286A40C900F41076 /* CollectionViewCell.swift */; };
+		955CD499286B0EB300F41076 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD498286B0EB300F41076 /* API.swift */; };
+		955CD49B286B211200F41076 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD49A286B211200F41076 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		955CD485286A1DA600F41076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955CD487286A1DA600F41076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955CD48D286A40C900F41076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		955CD498286B0EB300F41076 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		955CD49A286B211200F41076 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				955CD479286A1DA200F41076 /* AppDelegate.swift */,
 				955CD47B286A1DA200F41076 /* SceneDelegate.swift */,
 				955CD47D286A1DA200F41076 /* ViewController.swift */,
+				955CD49A286B211200F41076 /* SearchBar.swift */,
+				955CD498286B0EB300F41076 /* API.swift */,
 				955CD48D286A40C900F41076 /* CollectionViewCell.swift */,
 				955CD47F286A1DA200F41076 /* Main.storyboard */,
 				955CD482286A1DA600F41076 /* Assets.xcassets */,
@@ -145,6 +151,8 @@
 				955CD47A286A1DA200F41076 /* AppDelegate.swift in Sources */,
 				955CD48E286A40C900F41076 /* CollectionViewCell.swift in Sources */,
 				955CD47C286A1DA200F41076 /* SceneDelegate.swift in Sources */,
+				955CD499286B0EB300F41076 /* API.swift in Sources */,
+				955CD49B286B211200F41076 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
