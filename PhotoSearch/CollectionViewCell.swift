@@ -1,6 +1,7 @@
 import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
+    
     static let idenifier = "ImageCollectionViewCell"
     
     private let imageView: UIImageView = {
