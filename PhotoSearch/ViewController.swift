@@ -17,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarD
     
     public var collectionView: UICollectionView?
     let searchBar = UISearchBar()
-    
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -25,9 +25,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarD
         view.addSubview(searchBar)
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
-        layout.itemSize = CGSize(width: view.frame.size.width/2, height: view.frame.size.width/2)
+        layout.minimumLineSpacing = 2
+        layout.minimumInteritemSpacing = 1
+        layout.itemSize = CGSize(width: view.frame.size.width/2 - 4 , height: view.frame.size.width/2)
         let collectionView = UICollectionView(frame: .zero,
                                               collectionViewLayout: layout)
         collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.idenifier)
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarD
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        searchBar.frame = CGRect(x: 11, y: view.safeAreaInsets.top, width: view.frame.size.width-22, height: 22)
+        searchBar.frame = CGRect(x: 10, y: view.safeAreaInsets.top, width: view.frame.size.width-25, height: 50)
         collectionView?.frame = CGRect(x: 0, y: view.safeAreaInsets.top+55, width: view.frame.size.width, height: view.frame.size.height-55)
     }
     

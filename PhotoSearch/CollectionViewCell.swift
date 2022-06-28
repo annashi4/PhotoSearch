@@ -8,7 +8,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         
         return imageView
     }()
