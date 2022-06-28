@@ -50,6 +50,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarD
         collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.idenifier)
         collectionView.dataSource = self
         view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemBackground
         self.collectionView = collectionView
     }
     
