@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarDelegate {
+class SeatchViewController: UIViewController, UICollectionViewDataSource, UISearchBarDelegate {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return results.count
@@ -52,4 +52,3 @@ class ViewController: UIViewController, UICollectionViewDataSource, UISearchBarD
         }
     }
 }
-

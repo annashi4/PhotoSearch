@@ -18,9 +18,7 @@ struct URLS: Codable {
 var results: [Results] = []
 
 
-func fetchPhotos(query: String, complition: ViewController) {
-    
-    
+func fetchPhotos(query: String, complition: SeatchViewController) {
     let url: String = "https://api.unsplash.com/search/photos?page=1&per_page=50&query=\(query)&client_id=lMWX_l3h0M2_t0BNhysonSouKZ3z232UP7LoG7sArnw".replacingOccurrences(of: " ", with: "-")
     
     guard let url =  URL(string: url) else { return }
