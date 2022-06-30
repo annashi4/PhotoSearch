@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9518A4DD286C8A22002D7620 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518A4DC286C8A22002D7620 /* MainView.swift */; };
 		955CD47A286A1DA200F41076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD479286A1DA200F41076 /* AppDelegate.swift */; };
 		955CD47C286A1DA200F41076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD47B286A1DA200F41076 /* SceneDelegate.swift */; };
-		955CD47E286A1DA200F41076 /* SeatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD47D286A1DA200F41076 /* SeatchViewController.swift */; };
 		955CD481286A1DA200F41076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955CD47F286A1DA200F41076 /* Main.storyboard */; };
 		955CD483286A1DA600F41076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955CD482286A1DA600F41076 /* Assets.xcassets */; };
 		955CD486286A1DA600F41076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955CD484286A1DA600F41076 /* LaunchScreen.storyboard */; };
 		955CD48E286A40C900F41076 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD48D286A40C900F41076 /* CollectionViewCell.swift */; };
 		955CD499286B0EB300F41076 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD498286B0EB300F41076 /* API.swift */; };
+		956FBCF4286DB3FE00AEBB33 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518A4DC286C8A22002D7620 /* MainView.swift */; };
+		956FBCF7286DBCC800AEBB33 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD47D286A1DA200F41076 /* SearchView.swift */; };
 		957A5B06286CE16000690B82 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A5B05286CE16000690B82 /* Buttons.swift */; };
+		95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		955CD476286A1DA200F41076 /* PhotoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955CD479286A1DA200F41076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		955CD47B286A1DA200F41076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		955CD47D286A1DA200F41076 /* SeatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatchViewController.swift; sourceTree = "<group>"; };
+		955CD47D286A1DA200F41076 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		955CD480286A1DA200F41076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		955CD482286A1DA600F41076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955CD485286A1DA600F41076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		955CD48D286A40C900F41076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		955CD498286B0EB300F41076 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		957A5B05286CE16000690B82 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +68,12 @@
 			children = (
 				955CD479286A1DA200F41076 /* AppDelegate.swift */,
 				955CD47B286A1DA200F41076 /* SceneDelegate.swift */,
-				955CD47D286A1DA200F41076 /* SeatchViewController.swift */,
-				955CD498286B0EB300F41076 /* API.swift */,
 				9518A4DC286C8A22002D7620 /* MainView.swift */,
+				955CD47D286A1DA200F41076 /* SearchView.swift */,
+				95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */,
 				957A5B05286CE16000690B82 /* Buttons.swift */,
 				955CD48D286A40C900F41076 /* CollectionViewCell.swift */,
+				955CD498286B0EB300F41076 /* API.swift */,
 				955CD47F286A1DA200F41076 /* Main.storyboard */,
 				955CD482286A1DA600F41076 /* Assets.xcassets */,
 				955CD484286A1DA600F41076 /* LaunchScreen.storyboard */,
@@ -151,9 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				957A5B06286CE16000690B82 /* Buttons.swift in Sources */,
-				955CD47E286A1DA200F41076 /* SeatchViewController.swift in Sources */,
-				9518A4DD286C8A22002D7620 /* MainView.swift in Sources */,
+				956FBCF4286DB3FE00AEBB33 /* MainView.swift in Sources */,
 				955CD47A286A1DA200F41076 /* AppDelegate.swift in Sources */,
+				95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */,
+				956FBCF7286DBCC800AEBB33 /* SearchView.swift in Sources */,
 				955CD48E286A40C900F41076 /* CollectionViewCell.swift in Sources */,
 				955CD47C286A1DA200F41076 /* SceneDelegate.swift in Sources */,
 				955CD499286B0EB300F41076 /* API.swift in Sources */,
