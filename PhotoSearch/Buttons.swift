@@ -1,6 +1,6 @@
 import UIKit
 
-let searchButton: UIButton = {
+let showSearchVCButton: UIButton = {
     let button = UIButton()
     button.backgroundColor = .black
     button.setTitle("Search for photos", for: .normal)
@@ -10,7 +10,7 @@ let searchButton: UIButton = {
     return button
 }()
 
-let collectionButton: UIButton = {
+let showSavedPhotosButton: UIButton = {
     let button = UIButton()
     button.backgroundColor = .blue
     button.setTitle("Saved photos", for: .normal)
@@ -22,8 +22,8 @@ let collectionButton: UIButton = {
 let myStackView: UIStackView = {
     let sv = UIStackView()
     
-    sv.addArrangedSubview(searchButton)
-    sv.addArrangedSubview(collectionButton)
+    sv.addArrangedSubview(showSearchVCButton)
+    sv.addArrangedSubview(showSavedPhotosButton)
     
     sv.isUserInteractionEnabled = true
     
@@ -36,13 +36,3 @@ let myStackView: UIStackView = {
     
     return sv
 }()
-
-extension UIViewController{
-    
-    func setConstrains() {
-        myStackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        myStackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        myStackView.widthAnchor.constraint(equalToConstant: 360).isActive = true
-        myStackView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-    }
-}

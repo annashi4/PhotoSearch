@@ -16,8 +16,10 @@
 		955CD499286B0EB300F41076 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD498286B0EB300F41076 /* API.swift */; };
 		956FBCF4286DB3FE00AEBB33 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518A4DC286C8A22002D7620 /* MainView.swift */; };
 		956FBCF7286DBCC800AEBB33 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD47D286A1DA200F41076 /* SearchView.swift */; };
+		956FBCF9286DC82F00AEBB33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FBCF8286DC82F00AEBB33 /* Extensions.swift */; };
 		957A5B06286CE16000690B82 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A5B05286CE16000690B82 /* Buttons.swift */; };
 		95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */; };
+		95E9F496286DDB02003E8DBB /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95E9F495286DDB02003E8DBB /* PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		955CD487286A1DA600F41076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		955CD48D286A40C900F41076 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		955CD498286B0EB300F41076 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		956FBCF8286DC82F00AEBB33 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		957A5B05286CE16000690B82 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E9F496286DDB02003E8DBB /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,20 +70,29 @@
 		955CD478286A1DA200F41076 /* PhotoSearch */ = {
 			isa = PBXGroup;
 			children = (
-				955CD479286A1DA200F41076 /* AppDelegate.swift */,
-				955CD47B286A1DA200F41076 /* SceneDelegate.swift */,
+				956FBCFA286DCF4E00AEBB33 /* Views */,
 				9518A4DC286C8A22002D7620 /* MainView.swift */,
 				955CD47D286A1DA200F41076 /* SearchView.swift */,
 				95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */,
 				957A5B05286CE16000690B82 /* Buttons.swift */,
 				955CD48D286A40C900F41076 /* CollectionViewCell.swift */,
+				956FBCF8286DC82F00AEBB33 /* Extensions.swift */,
 				955CD498286B0EB300F41076 /* API.swift */,
+				955CD479286A1DA200F41076 /* AppDelegate.swift */,
+				955CD47B286A1DA200F41076 /* SceneDelegate.swift */,
 				955CD47F286A1DA200F41076 /* Main.storyboard */,
 				955CD482286A1DA600F41076 /* Assets.xcassets */,
 				955CD484286A1DA600F41076 /* LaunchScreen.storyboard */,
 				955CD487286A1DA600F41076 /* Info.plist */,
 			);
 			path = PhotoSearch;
+			sourceTree = "<group>";
+		};
+		956FBCFA286DCF4E00AEBB33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +111,9 @@
 			dependencies = (
 			);
 			name = PhotoSearch;
+			packageProductDependencies = (
+				95E9F495286DDB02003E8DBB /* PromiseKit */,
+			);
 			productName = PhotoSearch;
 			productReference = 955CD476286A1DA200F41076 /* PhotoSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 955CD46D286A1DA200F41076;
+			packageReferences = (
+				95E9F494286DDB02003E8DBB /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = 955CD477286A1DA200F41076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957A5B06286CE16000690B82 /* Buttons.swift in Sources */,
+				956FBCF9286DC82F00AEBB33 /* Extensions.swift in Sources */,
 				956FBCF4286DB3FE00AEBB33 /* MainView.swift in Sources */,
 				955CD47A286A1DA200F41076 /* AppDelegate.swift in Sources */,
 				95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */,
@@ -380,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95E9F494286DDB02003E8DBB /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95E9F495286DDB02003E8DBB /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95E9F494286DDB02003E8DBB /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 955CD46E286A1DA200F41076 /* Project object */;
 }

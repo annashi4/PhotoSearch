@@ -7,8 +7,8 @@ class MainView: UIViewController {
         view.addSubview(myStackView)
         setConstrains()
     
-        searchButton.addTarget(self, action: #selector (showSearchView), for: .touchUpInside)
-        
+        showSearchVCButton.addTarget(self, action: #selector (showSearchView), for: .touchUpInside)
+        showSavedPhotosButton.addTarget(self, action:  #selector (showSavedPhotosView), for: .touchUpInside)
     }
         
     @objc func showSearchView() {
@@ -16,4 +16,9 @@ class MainView: UIViewController {
         self.present(searchVC, animated: true)
     }
 
+    @objc func showSavedPhotosView(){
+        let savedPhoto = SavedPhotosView()
+        
+        self.present(savedPhoto, animated: true)
+    }
 }
