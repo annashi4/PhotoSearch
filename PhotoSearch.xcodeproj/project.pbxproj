@@ -18,7 +18,6 @@
 		956FBCF7286DBCC800AEBB33 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955CD47D286A1DA200F41076 /* SearchView.swift */; };
 		956FBCF9286DC82F00AEBB33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956FBCF8286DC82F00AEBB33 /* Extensions.swift */; };
 		957A5B06286CE16000690B82 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A5B05286CE16000690B82 /* Buttons.swift */; };
-		95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */; };
 		95E9F496286DDB02003E8DBB /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95E9F495286DDB02003E8DBB /* PromiseKit */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		955CD498286B0EB300F41076 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		956FBCF8286DC82F00AEBB33 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		957A5B05286CE16000690B82 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 				956FBCFA286DCF4E00AEBB33 /* Views */,
 				9518A4DC286C8A22002D7620 /* MainView.swift */,
 				955CD47D286A1DA200F41076 /* SearchView.swift */,
-				95E14BCB286D7E96008A00A6 /* SavedPhotosView.swift */,
 				957A5B05286CE16000690B82 /* Buttons.swift */,
 				955CD48D286A40C900F41076 /* CollectionViewCell.swift */,
 				956FBCF8286DC82F00AEBB33 /* Extensions.swift */,
@@ -176,7 +173,6 @@
 				956FBCF9286DC82F00AEBB33 /* Extensions.swift in Sources */,
 				956FBCF4286DB3FE00AEBB33 /* MainView.swift in Sources */,
 				955CD47A286A1DA200F41076 /* AppDelegate.swift in Sources */,
-				95E14BCC286D7E96008A00A6 /* SavedPhotosView.swift in Sources */,
 				956FBCF7286DBCC800AEBB33 /* SearchView.swift in Sources */,
 				955CD48E286A40C900F41076 /* CollectionViewCell.swift in Sources */,
 				955CD47C286A1DA200F41076 /* SceneDelegate.swift in Sources */,
